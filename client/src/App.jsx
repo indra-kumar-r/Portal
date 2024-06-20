@@ -7,6 +7,7 @@ import NotFound from "./components/NotFound";
 import CreateUser from "./pages/CreateUser";
 import EditUser from "./pages/EditUser";
 import ListUser from "./pages/ListUser";
+import "./styles/styles.scss";
 
 const App = () => {
   return (
@@ -14,11 +15,6 @@ const App = () => {
       <Routes>
         <Route path={"/"} element={<Layout />}>
           <Route index element={<Login />} />
-          <Route path={"/home"} element={<Home />} />
-          <Route path={"/createuser"} element={<CreateUser />} />
-          <Route path={"/edituser"} element={<EditUser />} />
-          <Route path={"/listusers"} element={<ListUser />} />
-          <Route path={"*"} element={<NotFound />} />
         </Route>
       </Routes>
     </>
